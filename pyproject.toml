@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "statuspageio"
+version = "0.1.0"
+description = "Python Client SDK to interact with Atlassian's Status Page (statuspage.io)"
+authors = ["Duc A. Le <anhdle14@icloud.com>"]
+license = "Apache License 2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.31.0"
+munch = "^4.0.0"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.0.287"
+
+[tool.ruff]
+line-length = 80
+src = ["statuspageio"]
+ignore = ["E501"]
+
+[tool.black]
+line-length = 80
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
